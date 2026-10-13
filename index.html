@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>The Wedding of Benny Chandra & Siska</title>
+<meta property="og:title" content="The Wedding of Benny Chandra & Siska">
+<meta property="og:description" content="Kami akan menikah, kami ingin Anda menjadi bagian dari hari bahagia kami.">
+<meta property="og:image" content="https://i.imgur.com/dA0nUm3.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b2a5b;--bg2:#12408a;--card:rgba(255,255,255,.08);--gold:#e9d8a6;--txt:#eef4ff;--soft:#b9cdf0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600}
+.script{font-family:'Great Vibes',cursive;color:var(--gold);font-weight:400}
+section{padding:70px 22px 80px;text-align:center;max-width:560px;margin:auto;position:relative}
+.bgfull{background:linear-gradient(180deg,var(--bg),var(--bg2) 50%,var(--bg));max-width:none}
+.bgfull>.in{max-width:560px;margin:auto}
+.title{font-size:2.6rem;margin-bottom:6px}
+.sub{color:var(--soft);font-size:.9rem;margin-bottom:28px}
+.card{background:var(--card);border:1px solid rgba(233,216,166,.35);border-radius:18px;padding:26px 20px;backdrop-filter:blur(4px)}
+.btn{display:inline-block;background:var(--gold);color:#0b2a5b;border:0;padding:10px 24px;border-radius:30px;font:500 .9rem 'Poppins';cursor:pointer;text-decoration:none;margin-top:14px}
+.btn:hover{opacity:.85}
+#cover{min-height:100vh;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;
+background:linear-gradient(rgba(8,30,70,.78),rgba(8,30,70,.92)),url(https://i.imgur.com/ZN8Ij3S.png) center/cover fixed}
+#cover .in{max-width:520px}
+.names{font-size:3.2rem;line-height:1.1;margin:8px 0}
+.amp{font-size:2rem}
+.guest{margin:20px 0 4px;font-size:.85rem;color:var(--soft)}
+.guest b{display:block;font-size:1.2rem;color:#fff}
+.countdown{display:flex;gap:10px;justify-content:center;margin:22px 0}
+.countdown div{background:var(--card);border:1px solid rgba(233,216,166,.4);border-radius:12px;padding:10px 0;width:70px}
+.countdown b{display:block;font-size:1.5rem;font-family:'Playfair Display'}
+.countdown small{font-size:.7rem;color:var(--soft)}
+#gate{position:fixed;inset:0;z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;
+background:linear-gradient(rgba(8,30,70,.8),rgba(8,30,70,.95)),url(https://i.imgur.com/dA0nUm3.jpeg) center/cover;transition:transform .9s ease}
+#gate.open{transform:translateY(-100%)}
+.couple{display:flex;flex-direction:column;gap:34px}
+.person img{width:210px;height:270px;object-fit:cover;object-position:top;border-radius:110px 110px 18px 18px;border:3px solid var(--gold)}
+.person h3{font-size:1.6rem;margin-top:14px}
+.person p{color:var(--soft);font-size:.9rem}
+.quote{font-style:italic;color:var(--soft);font-size:.95rem}
+.arab{font-size:1.5rem;direction:rtl;margin:14px 0;line-height:2.2}
+.event{margin-bottom:22px}
+.event h3{font-size:1.7rem;color:var(--gold)}
+.bigdate{font-size:3.4rem;line-height:1;margin:8px 0}
+.timeline{position:relative;padding-left:26px;text-align:left;margin-top:10px}
+.timeline:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--gold);opacity:.5}
+.tl{position:relative;margin-bottom:34px}
+.tl:before{content:"";position:absolute;left:-26px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.tl img{width:100%;height:230px;object-fit:cover;border-radius:14px;margin-bottom:12px;border:2px solid rgba(233,216,166,.5)}
+.tl small{color:var(--gold);letter-spacing:1px}
+.tl h3{font-size:1.2rem;margin:2px 0 4px}
+.tl p{color:var(--soft);font-size:.9rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid img{width:100%;height:210px;object-fit:cover;border-radius:12px;cursor:pointer;transition:.3s}
+.grid img:hover{transform:scale(1.03)}
+.grid .wide{grid-column:span 2;height:260px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:120}
+#lb img{max-width:92%;max-height:90%;border-radius:10px}
+.bank{margin-bottom:16px}
+.bank h3{font-size:1.1rem;color:var(--gold)}
+.bank .no{font-size:1.3rem;letter-spacing:1px;margin:4px 0}
+input,textarea,select{width:100%;padding:11px 14px;border-radius:10px;border:1px solid rgba(233,216,166,.4);background:rgba(255,255,255,.1);color:#fff;font:400 .9rem 'Poppins';margin-bottom:10px}
+select option{color:#000}
+::placeholder{color:#bcd}
+.wishes{max-height:300px;overflow:auto;text-align:left;margin-top:20px}
+.wish{background:var(--card);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.wish b{color:var(--gold)}.wish small{color:var(--soft);display:block}
+footer{padding:50px 20px 110px;text-align:center;background:#071d42}
+nav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:none;gap:4px;background:rgba(7,29,66,.92);border:1px solid rgba(233,216,166,.4);padding:8px 14px;border-radius:40px;z-index:50}
+nav a{color:var(--txt);text-decoration:none;font-size:.72rem;padding:6px 10px;border-radius:20px}
+nav a:hover{background:var(--gold);color:#0b2a5b}
+#music{position:fixed;right:14px;bottom:78px;width:44px;height:44px;border-radius:50%;border:0;background:var(--gold);color:#0b2a5b;font-size:1.2rem;cursor:pointer;z-index:50;display:none}
+#music.on{animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.reveal{opacity:0;transform:translateY(30px);transition:1s}
+.reveal.show{opacity:1;transform:none}
+</style>
+</head>
+<body class="lock">
+
+<div id="gate">
+  <p class="sub" style="margin:0">The Wedding Of</p>
+  <h1 class="names script">Benny Chandra<br><span class="amp">&</span><br>Siska</h1>
+  <p class="guest">Kepada Yth. Bapak/Ibu/Saudara/i<b id="guestName">Tamu Undangan</b></p>
+  <button class="btn" onclick="openInv()">✉ Buka Undangan</button>
+</div>
+
+<section id="cover">
+  <div class="in reveal">
+    <p class="sub" style="margin:0">The Wedding Of</p>
+    <h1 class="names script">Benny Chandra <span class="amp">&</span> Siska</h1>
+    <p>Kami akan menikah, kami ingin Anda menjadi bagian dari hari bahagia kami</p>
+    <div class="countdown">
+      <div><b id="d">00</b><small>Hari</small></div><div><b id="h">00</b><small>Jam</small></div>
+      <div><b id="m">00</b><small>Menit</small></div><div><b id="s">00</b><small>Detik</small></div>
+    </div>
+    <p><b>Sabtu, 24 Oktober 2026</b></p>
+    <a class="btn" target="_blank" id="saveDate">Simpan Tanggal</a>
+  </div>
+</section>
+
+<div class="bgfull" id="mempelai"><section class="in">
+  <div class="reveal">
+    <p class="arab">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
+    <p class="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.” <br><b>(QS. Ar-Rum: 21)</b></p>
+  </div>
+  <h2 class="title script reveal" style="margin-top:50px">Mempelai</h2>
+  <p class="sub reveal">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Anda ke pernikahan kami</p>
+  <div class="couple">
+    <div class="person reveal"><img src="https://i.imgur.com/dA0nUm3.jpeg" alt="Benny Chandra">
+      <h3>Benny Chandra</h3><p>Putra dari<br>Bapak ... & Ibu ...</p></div>
+    <div class="script amp reveal" style="font-size:3rem">&</div>
+    <div class="person reveal"><img src="https://i.imgur.com/ZN8Ij3S.png" alt="Siska">
+      <h3>Siska</h3><p>Putri dari<br>Bapak ... & Ibu ...</p></div>
+  </div>
+</section></div>
+
+<section id="acara">
+  <h2 class="title script reveal">Save The Date</h2>
+  <p class="sub reveal">Dengan segala kerendahan hati, kami mengundang Anda pada hari bahagia kami</p>
+  <div class="card event reveal">
+    <h3>Akad Nikah</h3><p>Sabtu</p><div class="bigdate script">24</div><p>Oktober 2026</p>
+    <p>Pukul 09.00 WIB s.d Selesai</p><p><b>Lokasi</b><br>Nama Gedung / Alamat Lengkap Akad</p>
+    <a class="btn" href="https://maps.google.com" target="_blank">Lihat Lokasi</a>
+  </div>
+  <div class="card event reveal">
+    <h3>Resepsi</h3><p>Sabtu</p><div class="bigdate script">24</div><p>Oktober 2026</p>
+    <p>Pukul 11.00 WIB s.d Selesai</p><p><b>Lokasi</b><br>Nama Gedung / Alamat Lengkap Resepsi</p>
+    <a class="btn" href="https://maps.google.com" target="_blank">Lihat Lokasi</a>
+  </div>
+</section>
+
+<div class="bgfull"><section class="in" id="story">
+  <h2 class="title script reveal">Love Story</h2>
+  <p class="sub reveal">Perjalanan cinta kami</p>
+  <div class="timeline">
+    <div class="tl reveal"><img src="https://i.imgur.com/dA0nUm3.jpeg" alt="Pertemuan"><small>2021</small><h3>Awal Bertemu</h3>
+      <p>Takdir mempertemukan kami dalam sebuah momen sederhana. Dari sapaan singkat, tumbuh obrolan yang tak pernah habis.</p></div>
+    <div class="tl reveal"><img src="https://i.imgur.com/ZN8Ij3S.png" alt="Kedekatan"><small>2023</small><h3>Mulai Dekat</h3>
+      <p>Seiring waktu, kami saling mengenal, berbagi cerita, tawa, dan mimpi. Perlahan kami yakin bahwa hati telah menemukan rumahnya.</p></div>
+    <div class="tl reveal"><img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Lamaran" style="object-position:center 20%"><small>2025</small><h3>Lamaran</h3>
+      <p>Dengan restu kedua keluarga, kami melangkah ke jenjang yang lebih serius dengan niat tulus membangun rumah tangga.</p></div>
+    <div class="tl reveal"><img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Menikah" style="object-position:center 30%"><small>2026</small><h3>Hari Pernikahan</h3>
+      <p>Dengan izin Allah SWT, kami akan mengikat janji suci dan memulai perjalanan baru sebagai suami istri.</p></div>
+  </div>
+</section></div>
+
+<section id="galerry">
+  <h2 class="title script reveal">Our Gallery</h2>
+  <p class="sub reveal">Momen-momen indah kami</p>
+  <div class="grid reveal">
+    <img class="wide" src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 1" style="object-position:center 25%">
+    <img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 2" style="object-position:top">
+    <img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 3" style="object-position:center 15%">
+    <img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 4" style="object-position:center 55%">
+    <img src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 5" style="object-position:center 30%">
+    <img class="wide" src="https://i.imgur.com/ob1BDYX.jpeg" alt="Galeri 6" style="object-position:center 20%">
+  </div>
+</section>
+<div id="lb" onclick="this.style.display='none'"><img id="lbImg" alt=""></div>
+
+<div class="bgfull"><section class="in" id="hadiah">
+  <h2 class="title script reveal">Wedding Gift</h2>
+  <p class="sub reveal">Doa restu Anda adalah hadiah terindah. Namun jika ingin memberi tanda kasih, dapat melalui:</p>
+  <div class="card bank reveal"><h3>Bank BCA</h3><div class="no" id="rek1">1234567890</div><p>a.n. Benny Chandra</p>
+    <button class="btn" onclick="copyTxt('rek1',this)">Copy No.Rek</button></div>
+  <div class="card bank reveal"><h3>DANA / GoPay</h3><div class="no" id="rek2">081234567890</div><p>a.n. Siska</p>
+    <button class="btn" onclick="copyTxt('rek2',this)">Copy No.Rek</button></div>
+  <div class="card bank reveal"><h3>Alamat Pengiriman Kado</h3><p id="alamat">Jl. Contoh No. 1, Kota, Provinsi</p>
+    <button class="btn" onclick="copyTxt('alamat',this)">Copy Alamat</button></div>
+</section></div>
+
+<section id="ucapan">
+  <h2 class="title script reveal">Ucapan & Doa</h2>
+  <p class="sub reveal">Kirimkan ucapan dan konfirmasi kehadiran Anda</p>
+  <div class="card reveal">
+    <input id="wName" placeholder="Nama Anda">
+    <select id="wHadir"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select>
+    <textarea id="wMsg" rows="3" placeholder="Tulis ucapan & doa..."></textarea>
+    <button class="btn" style="margin:0" onclick="addWish()">Kirim Ucapan</button>
+    <a class="btn" style="margin-left:6px" id="waBtn" target="_blank">Konfirmasi via WhatsApp</a>
+    <div class="wishes" id="wishes"></div>
+  </div>
+</section>
+
+<footer>
+  <p class="sub">Kami Yang Berbahagia</p>
+  <h2 class="script" style="font-size:3rem">Benny Chandra & Siska</h2>
+  <p class="sub">Atas kehadiran dan doa restunya kami ucapkan terima kasih.<br>Wassalamu’alaikum Wr. Wb.</p>
+</footer>
+
+<nav id="nav">
+  <a href="#cover">Cover</a><a href="#mempelai">Mempelai</a><a href="#acara">Acara</a><a href="#galerry">Galeri</a><a href="#ucapan">Ucapan</a>
+</nav>
+<button id="music" onclick="toggleMusic()">♫</button>
+<!-- Isi src dengan file musik, mis. musik/lagu.mp3 -->
+<audio id="audio" loop src=""></audio>
+
+<script>
+/* ====== PENGATURAN: EDIT DI SINI ====== */
+const CFG = {
+  tanggal: "2026-10-24T09:00:00+07:00",
+  judul: "Pernikahan Benny Chandra & Siska",
+  lokasi: "Lokasi acara",
+  waNomor: "6281234567890"
+};
+/* ====================================== */
+
+const to = new URLSearchParams(location.search).get('to');
+if (to) document.getElementById('guestName').textContent = to;
+
+function openInv(){
+  document.getElementById('gate').classList.add('open');
+  document.body.classList.remove('lock');
+  document.getElementById('nav').style.display='flex';
+  const mb=document.getElementById('music'), au=document.getElementById('audio');
+  if(au.getAttribute('src')){ mb.style.display='block'; au.play().then(()=>mb.classList.add('on')).catch(()=>{}); }
+}
+function toggleMusic(){
+  const au=document.getElementById('audio'), mb=document.getElementById('music');
+  if(au.paused){au.play();mb.classList.add('on')}else{au.pause();mb.classList.remove('on')}
+}
+
+const target = new Date(CFG.tanggal).getTime();
+(function tick(){
+  const t = Math.max(0, target - Date.now());
+  const p = n => String(n).padStart(2,'0');
+  document.getElementById('d').textContent = p(Math.floor(t/864e5));
+  document.getElementById('h').textContent = p(Math.floor(t%864e5/36e5));
+  document.getElementById('m').textContent = p(Math.floor(t%36e5/6e4));
+  document.getElementById('s').textContent = p(Math.floor(t%6e4/1e3));
+  setTimeout(tick,1000);
+})();
+
+const fmt = x => new Date(x).toISOString().replace(/[-:]|\.\d{3}/g,'');
+document.getElementById('saveDate').href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(CFG.judul)+
+  "&dates="+fmt(target)+"/"+fmt(target+4*36e5)+"&location="+encodeURIComponent(CFG.lokasi);
+
+function copyTxt(id,btn){
+  navigator.clipboard.writeText(document.getElementById(id).textContent.trim()).then(()=>{
+    const o=btn.textContent; btn.textContent='Tersalin ✓'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+document.querySelectorAll('.grid img').forEach(i=>i.onclick=()=>{
+  document.getElementById('lbImg').src=i.src; document.getElementById('lb').style.display='flex';
+});
+
+/* Ucapan disimpan di browser pengunjung. Untuk ucapan yang dilihat semua tamu, sambungkan ke backend (mis. Supabase/Firebase). */
+const esc = s => s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let wishes=[]; try{wishes=JSON.parse(localStorage.getItem('wishes')||'[]')}catch(e){}
+function render(){
+  document.getElementById('wishes').innerHTML = wishes.map(w=>
+    `<div class="wish"><b>${esc(w.n)}</b> <small>${esc(w.h)}</small><p>${esc(w.m)}</p></div>`).join('');
+}
+function addWish(){
+  const n=document.getElementById('wName').value.trim(), m=document.getElementById('wMsg').value.trim();
+  if(!n||!m) return alert('Mohon isi nama dan ucapan.');
+  wishes.unshift({n,m,h:document.getElementById('wHadir').value});
+  try{localStorage.setItem('wishes',JSON.stringify(wishes))}catch(e){}
+  document.getElementById('wMsg').value=''; render();
+}
+render();
+function updWA(){
+  document.getElementById('waBtn').href="https://api.whatsapp.com/send?phone="+CFG.waNomor+"&text="+encodeURIComponent(
+   "Hai, saya "+(document.getElementById('wName').value||"tamu undangan")+" mau konfirmasi kehadiran: "+document.getElementById('wHadir').value);
+}
+['input','change'].forEach(e=>document.addEventListener(e,updWA)); updWA();
+
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
